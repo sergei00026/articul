@@ -1,0 +1,85 @@
+//====================================================================================================
+.header {
+	padding: 33px 0 10px 0;
+	@media (max-width: em(600)) {
+		padding: 16px 0 10px 0;
+	}
+	// .header__container
+	&__container {
+	}
+	// .header__menu
+	&__menu {
+	}
+}
+.menu {
+	display: flex;
+	// .menu__icon
+	&__icon {
+	}
+}
+.icon-menu {
+	margin-left: auto;
+	img {
+		width: 34px;
+		height: 34px;
+		flex: 0 0 34px;
+		@media (max-width: em(600)) {
+			width: 22px;
+			height: 22px;
+			flex: 0 0 22px;
+		}
+	}
+}
+
+//====================================================================================================
+
+//Burger
+/*
+.icon-menu {
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		width: rem(30);
+		height: rem(18);
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			background-color: #000;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - rem(1));
+		}
+		.menu-open & {
+			span {
+				width: 0;
+			}
+			&::before,
+			&::after {
+			}
+			&::before {
+				top: calc(50% - rem(1));
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - rem(1));
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+*/
